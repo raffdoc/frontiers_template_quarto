@@ -1,0 +1,22 @@
+title: Frontiers
+author: Frontiers
+version: 1.0.0
+quarto-required: ">=1.2.0"
+contributes:
+  formats:
+    pdf:
+      keep-tex: true
+      latex-auto-install: false
+      documentclass: FrontiersinHarvard
+      format-resources:
+        - "*.cls"
+        - "*.bst"
+        - "*.eps"
+        - "*.pdf"
+      classoption:
+        - utf8
+      template-partials:
+        - partials/title.tex
+        - partials/before-body.tex
+      cite-method: natbib
+      biblio-style: Frontiers-Harvard

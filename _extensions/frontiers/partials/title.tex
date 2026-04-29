@@ -1,0 +1,18 @@
+$if(title)$
+\title[$if(shorttitle)$$shorttitle$$else$$title$$endif$]{$title$}
+$endif$
+
+\def\keyFont{\fontsize{8}{11}\helveticabold }
+\def\firstAuthorLast{$if(first-author-last)$$first-author-last$$else$$for(by-author)$
+$if(it.name.family)$$it.name.family$$else$$it.name.literal$$endif$
+$endfor$ \textit{et~al.}$endif$}
+
+\def\Authors{$for(by-author)$$it.name.literal$\,$$^{$for(it.affiliations)$$it.number$$sep$,$endfor$$if(it.attributes.corresponding)$,*$endif$}$$%
+$sep$, $endfor$}
+
+\def\Address{$for(by-affiliation)$$$^{$it.number$}$$ $it.name$$if(it.department)$, $it.department$$endif$$if(it.city)$, $it.city$$endif$$if(it.country)$, $it.country$$endif$$sep$ \\ $endfor$}
+
+\def\corrAuthor{$for(by-author)$$if(it.attributes.corresponding)$$it.name.literal$$endif$$endfor$}
+
+\def\corrEmail{$for(by-author)$$if(it.attributes.corresponding)$$it.email$$endif$$endfor$}
+

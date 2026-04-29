@@ -1,0 +1,25 @@
+$if(has-frontmatter)$
+\frontmatter
+$endif$
+
+\onecolumn
+\firstpage{1}
+
+\author[\firstAuthorLast ]{\Authors} 
+\address{} 
+\correspondance{} 
+\extraAuth{}
+
+\maketitle
+
+$if(abstract)$
+\begin{abstract}
+\section{}
+$abstract$
+
+\tiny
+$if(keywords)$
+\keyFont{\section{Keywords:} $for(keywords)$$it$$sep$, $endfor$}
+$endif$
+\end{abstract}
+$endif$

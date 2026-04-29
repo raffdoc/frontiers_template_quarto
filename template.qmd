@@ -1,0 +1,72 @@
+---
+title: "Article Title"
+shorttitle: "Running Title"
+format: frontiers-pdf
+author:
+  - name: First Author
+    corresponding: true
+    email: email@uni.edu
+    affiliations:
+      - id: 1
+        name: Laboratory X
+        department: Institute X
+        city: City X
+        country: Country X
+  - name: Co-Author
+    affiliations:
+      - id: 2
+        name: Laboratory Y
+        department: Institute Y
+        city: City Y
+        country: Country Y
+  - name: Co-Author Two
+    affiliations:
+      - ref: 1
+      - ref: 2
+abstract: |
+  As a primary goal, the abstract should render the general significance and conceptual advance of the work clearly accessible to a broad readership. References should not be cited in the abstract. Leave the Abstract empty if your article does not require one.
+keywords: [keyword, keyword, keyword, keyword, keyword]
+bibliography: test.bib
+---
+
+# Introduction
+
+For Original Research Articles [@conference], Clinical Trial Articles [@article], and Technology Reports [@patent], the introduction should be succinct, with no subheadings [@book]. For Case Reports the Introduction should include symptoms at presentation [@chapter].
+
+# Article types
+
+For requirements for a specific article type please refer to the Article Types on any Frontiers journal page.
+
+# Manuscript Formatting
+
+## Heading Levels
+
+There are 5 heading levels
+
+## Equations
+
+Equations should be inserted in editable format from the equation editor.
+
+$$
+\sum x+ y =Z
+$$
+
+## Figures
+
+Cite figures with subfigures as figure \ref{fig:1}.
+
+# Author Contributions
+
+The Author Contributions section is mandatory for all articles, including articles by sole authors.
+
+# Funding
+
+Details of all funding sources should be provided, including grant numbers if applicable.
+
+# Acknowledgments
+
+This is a short text to acknowledge the contributions of specific colleagues, institutions, or agencies that aided the efforts of the authors.
+
+# Conflict of Interest Statement
+
+The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.
