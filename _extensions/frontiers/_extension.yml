@@ -1,6 +1,6 @@
 title: Frontiers
 author: Frontiers
-version: 1.0.7
+version: 1.0.8
 quarto-required: ">=1.2.0"
 contributes:
   formats:
@@ -11,6 +11,7 @@ contributes:
       format-resources:
         - "*.cls"
         - "*.bst"
+        - "logos/"
       classoption:
         - utf8
       template-partials:
