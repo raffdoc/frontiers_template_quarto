@@ -20,6 +20,18 @@ format:
 ```
 You can consult the official [Frontiers Journals List](https://www.frontiersin.org/journals) online to find the exact name of the target sub-journal.
 
+## Custom Sub-Journal Logos
+
+If your specific sub-journal requires a customized logo graphic (such as "Frontiers in Cardiovascular Medicine"), you can override the default Frontiers placeholder image using the `logo:` YAML property. 
+
+```yaml
+format:
+  frontiers-pdf:
+    logo: "pics/cardiovascular_medicine.eps"
+```
+
+A copy of the standard Frontiers logo has been securely provided inside the `pics/` directory as a starter placeholder template.
+
 ## Usage
 
 This extension provides the `frontiers-pdf` format which builds against the official LaTeX class files provided by the journal.

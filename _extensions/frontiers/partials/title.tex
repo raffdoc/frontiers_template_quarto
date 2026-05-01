@@ -2,6 +2,12 @@ $if(title)$
 \title[$if(shorttitle)$$shorttitle$$else$$title$$endif$]{$title$}
 $endif$
 
+$if(logo)$
+\def\journalLogo{$logo$}
+$else$
+\def\journalLogo{./logo1.eps}
+$endif$
+
 \def\keyFont{\fontsize{8}{11}\helveticabold }
 \def\firstAuthorLast{$if(first-author-last)$$first-author-last$$else$$for(by-author)$
 $if(it.name.family)$$it.name.family$$else$$it.name.literal$$endif$
