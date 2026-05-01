@@ -483,7 +483,13 @@
   \parbox[t]{15pc}{%
     \helvetica
     \hfil
-    \flushleft  \includegraphics[width=12pc,angle=0]{\journalLogo}
+    \ifdefined\journalLogo
+      \def\emptyLogo{}
+      \ifx\journalLogo\emptyLogo
+      \else
+        \flushleft  \includegraphics[width=12pc,angle=0]{\journalLogo}
+      \fi
+    \fi
 
 
 }}
