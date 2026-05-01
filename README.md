@@ -27,10 +27,10 @@ If your specific sub-journal requires a customized logo graphic (such as "Fronti
 ```yaml
 format:
   frontiers-pdf:
-    logo: "_extensions/frontiers/logos/cardiovascular_medicine.eps"
+    logo: "logos/cardiovascular_medicine.eps"
 ```
 
-A copy of the standard Frontiers logo has been securely provided inside the `_extensions/frontiers/logos/` directory as a starter placeholder template.
+A copy of the standard Frontiers logo has been securely provided inside the `logos/` directory as a starter placeholder template.
 
 ## Usage
 

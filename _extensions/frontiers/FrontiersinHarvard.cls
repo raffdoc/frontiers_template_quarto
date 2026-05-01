@@ -483,7 +483,17 @@
   \parbox[t]{15pc}{%
     \helvetica
     \hfil
-    \flushleft  \includegraphics[width=12pc,angle=0]{\journalLogo}
+    \ifdefined\journalLogo
+      \def\emptyLogo{}
+      \ifx\journalLogo\emptyLogo
+      \else
+        \IfFileExists{\journalLogo}{
+          \flushleft  \includegraphics[width=12pc,angle=0]{\journalLogo}
+        }{
+          % Graceful degrade when missing
+        }
+      \fi
+    \fi
 
 
 }}
