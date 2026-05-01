@@ -4,6 +4,8 @@ A Quarto custom format extension targeting the official [Frontiers Journal Autho
 
 ## Installation
 
+> **Note:** Compiling this template will naturally extract native LaTeX layout configurations (`.cls`, `.bst`) directly into your project root folder. Standard Quarto practice is to ignore these via your local `.gitignore`.
+
 To install this template into your Quarto project, run the following command within your project directory:
 
 ```bash
