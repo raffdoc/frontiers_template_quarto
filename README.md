@@ -27,10 +27,9 @@ If your specific sub-journal requires a customized logo graphic (such as "Fronti
 ```yaml
 format:
   frontiers-pdf:
-    logo: "logo1.pdf"
 ```
 
-A copy of the standard Frontiers logo has been securely provided via `logo1.pdf` as a starter placeholder template.
+The standard Frontiers logo is utilized natively as the default. You may specify any additional asset via the `logo:` YAML parameter to override it.
 
 ## Usage
 
