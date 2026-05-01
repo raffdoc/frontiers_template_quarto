@@ -11,8 +11,6 @@ contributes:
       format-resources:
         - "*.cls"
         - "*.bst"
-        - "*.eps"
-        - "*.pdf"
       classoption:
         - utf8
       template-partials:
