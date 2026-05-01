@@ -29,7 +29,7 @@ abstract: |
   As a primary goal, the abstract should render the general significance and conceptual advance of the work clearly accessible to a broad readership. References should not be cited in the abstract. Leave the Abstract empty if your article does not require one.
 keywords: [keyword, keyword, keyword, keyword, keyword]
 bibliography: bibliography.bib
-logo: _extensions/frontiers/logos/cardiovascular_medicine.pdf
+logo: logo1.pdf
 ---
 
 # Introduction
