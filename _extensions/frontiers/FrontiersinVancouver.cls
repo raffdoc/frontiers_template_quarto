@@ -482,13 +482,7 @@
   \parbox[t]{15pc}{%
     \helvetica
     \hfil
-    \ifdefined\journalLogo
-      \def\emptyLogo{}
-      \ifx\journalLogo\emptyLogo
-      \else
-        \flushleft  \includegraphics[width=12pc,angle=0]{\journalLogo}
-      \fi
-    \fi
+    \flushleft  \includegraphics[width=12pc,angle=0]{\journalLogo}
 
 }}
  \rule{\textwidth}{1\p@}\par%
