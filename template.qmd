@@ -1,7 +1,9 @@
 ---
 title: "Article Title"
 shorttitle: "Running Title"
-format: frontiers-pdf
+format: 
+  frontiers-pdf:
+    journal: "Frontiers in Cardiovascular Medicine"
 author:
   - name: First Author
     corresponding: true

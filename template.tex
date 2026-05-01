@@ -206,6 +206,29 @@ Abstract empty if your article does not require one.
 \keyFont{\section{Keywords:} keyword, keyword, keyword, keyword, keyword}
 \end{abstract}
 
+\makeatletter
+\def\ps@headings
+  {%
+  \def\@oddfoot{\vbox to 12.5\p@{\rule{\textwidth}{0.5\p@}\vss
+        \hbox to \textwidth{\helveticabold\small {Frontiers in
+Cardiovascular Medicine}\hfill \thepage}%
+        }}%
+  \def\@evenfoot{\vbox to 12.5\p@{\rule{\textwidth}{0.5\p@}\vss
+        \hbox to \textwidth{\helveticabold\small {Frontiers in
+Cardiovascular Medicine}\hfill \thepage}%
+        }}%
+  \def\@evenhead{\vbox{\hbox to \textwidth{\fontsize{11}{10}\selectfont
+        \helveticabold{\fontshape{it}\selectfont
+        \strut\firstAuthorLast}\hfill\strut\rightmark}\vspace{6.5\p@}\rule{\textwidth}{0.5\p@}}}%
+  \def\@oddhead{\vbox{\hbox to \textwidth{\fontsize{11}{10}\selectfont
+        \helveticabold{\fontshape{it}\selectfont
+        \strut\firstAuthorLast}\hfill\strut\rightmark}\vspace{6.5\p@}\rule{\textwidth}{0.5\p@}}}%
+  \def\titlemark##1{\markboth{##1}{##1}}%
+  \def\authormark##1{\gdef\leftmark{##1}}%
+  }
+\makeatother
+\pagestyle{headings}
+
 
 \section{Introduction}\label{introduction}
 

@@ -9,6 +9,17 @@ To install this template into your Quarto project, run the following command wit
 ```bash
 quarto add raffdoc/frontiers_template_quarto
 ```
+
+## Sub-Journals Option
+
+You can specify a distinct Frontiers sub-journal which correctly updates the running headers of the final PDF:
+```yaml
+format:
+  frontiers-pdf:
+    journal: "Frontiers in Cardiovascular Medicine"
+```
+You can consult the official [Frontiers Journals List](https://www.frontiersin.org/journals) online to find the exact name of the target sub-journal.
+
 ## Usage
 
 This extension provides the `frontiers-pdf` format which builds against the official LaTeX class files provided by the journal.
